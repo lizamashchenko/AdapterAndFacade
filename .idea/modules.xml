@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AdapterAndFacade.iml" filepath="$PROJECT_DIR$/AdapterAndFacade.iml" />
       <module fileurl="file://$PROJECT_DIR$/AdapterForusers/AdapterForUsers.iml" filepath="$PROJECT_DIR$/AdapterForusers/AdapterForUsers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CompanyParser/CompanyParser.iml" filepath="$PROJECT_DIR$/CompanyParser/CompanyParser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UkrainianMethods/UkrainianMethods.iml" filepath="$PROJECT_DIR$/UkrainianMethods/UkrainianMethods.iml" />
     </modules>
   </component>
 </project>

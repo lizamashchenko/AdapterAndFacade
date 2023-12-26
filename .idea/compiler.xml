@@ -7,11 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="UkrainianMethods" />
+        <module name="CompanyParser" />
         <module name="AdapterForUsers" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AdapterForUsers" target="17" />
+      <module name="CompanyParser" target="17" />
+      <module name="UkrainianMethods" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
