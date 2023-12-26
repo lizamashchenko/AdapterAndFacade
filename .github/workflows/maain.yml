@@ -1,0 +1,39 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up JDK
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'adopt'
+        java-version: '17'
+
+    - name: Build with Maven in AdapterForUsers
+      run: |
+        cd AdapterForUsers
+        mvn clean install
+
+    - name: Run Tests in AdapterForUsers
+      run: |
+        cd AdapterForUsers
+        mvn test
+    - name: Build with Maven in UkrainianMethods
+      run: |
+        cd UkrainianMethods
+        mvn clean install
+
+    - name: Run Tests in UkrainianMethods
+      run: |
+        cd UkrainianMethods
+        mvn test
